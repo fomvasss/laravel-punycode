@@ -1,0 +1,28 @@
+{
+    "name": "fomvasss/laravel-punycode",
+    "description": "Package for encoding of Unicode for Internationalized Domain Names in Applications (IDNA)",
+    "keywords": ["laravel", "punycode", "idn", "domain"],
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "role": "Company",
+            "name": "WebWest",
+            "homepage": "http://web-west.net.ua"
+        },
+        {
+            "role": "Developer",
+            "name": "Fomin Vasyl",
+            "email": "fomin.vasil@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "5.1.*|5.2.*|5.3.*|5.4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fomvasss\\Punycode\\": "src"
+        }
+    }
+}
