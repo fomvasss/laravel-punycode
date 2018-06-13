@@ -3,22 +3,16 @@
 This package converts a Unicode encoded domain name to a IDNA ASCII form and vice-versa.
 
 ## Install
-Require this package with composer:
-```
-"fomvasss/laravel-punycode": "^1.0",
-```
-and run:
-```shell
-composer update
-```
-or run
+Run:
 ```shell
 composer require "fomvasss/laravel-punycode"
 ```
-After updating composer, add the ServiceProvider to the providers array in config/app.php
+**For Laravel < 5.5**
+Add in ServiceProvider to the providers array in config/app.php
 ```php
   Fomvasss\Punycode\PunycodeServiceProvider::class,
 ```
+
 Copy the package config to your local config with the publish command (optional):
 ```shell
 php artisan vendor:publish --provider="Fomvasss\Punycode\PunycodeServiceProvider" --tag="config"
