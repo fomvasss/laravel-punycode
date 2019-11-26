@@ -13,10 +13,9 @@ class PunycodeServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $configPath = __DIR__ . '/../config/punycode.php';
-        $publishPath = config_path('punycode.php');
-
-        $this->publishes([$configPath => $publishPath], 'config');
+        $this->publishes([
+            $__DIR__ . '/../config/punycode.php' => config_path('punycode.php')
+        ], 'config');
 
         $this->registerHelpers();
     }

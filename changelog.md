@@ -1,5 +1,9 @@
 # Changelog for Laravel Punycode
 
+## 1.2.0 (2010-11-26)
+
+- Support Laravel 6
+
 ## 1.1.0 (2018-06-13)
 
 - Add support Laravel 5.6

@@ -4,7 +4,7 @@ This package converts a Unicode encoded domain name to a IDNA ASCII form and vic
 
 ## Install
 Run:
-```shell
+```bash
 composer require "fomvasss/laravel-punycode"
 ```
 **For Laravel < 5.5**
@@ -13,15 +13,15 @@ Add in ServiceProvider to the providers array in config/app.php
   Fomvasss\Punycode\PunycodeServiceProvider::class,
 ```
 
-Copy the package config to your local config with the publish command (optional):
-```shell
+Publish configs (optional):
+```bash
 php artisan vendor:publish --provider="Fomvasss\Punycode\PunycodeServiceProvider" --tag="config"
 ```
 
 ## Usage
 
 ### Usage facade
-You can now using the Facade (when added), using the PSR-3 levels (encode, decode):
+You can now using the facade, using the PSR-3 levels (encode, decode):
 Add in your class the facade:
 ```php
 use Fomvasss\Punycode\Facades\Punycode;
